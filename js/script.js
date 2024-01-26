@@ -12,39 +12,6 @@ for (let i = 1; i <= $('.toggle').length; i++) {
     })
 }
 
-
-// function eventTimer() {
-//     let eventTime = JSON.parse(localStorage.getItem('eventTimer'))
-// 		let eventDate = new Date("10/3/2024");		
-//             eventDate = (Date.parse(eventDate) / 1000)
-//             console.log(eventDate)
-// 			let now = new Date();
-// 			now = (Date.parse(now) / 1000);
-//             console.log(now)
-// 			let timeLeft = eventDate - now;
-
-// 			let days = Math.floor(timeLeft / 86400),
-// 			    hours = Math.floor((timeLeft - (days * 86400)) / 3600),
-// 			    minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60),
-// 			    seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
-// 			if (hours < "10") {
-//                     hours = "0" + hours; 
-//                 }
-// 			if (minutes < "10") {
-//                     minutes = "0" + minutes; 
-//                 }
-// 			if (seconds < "10") {
-//                 seconds = "0" + seconds; 
-//             }
-//             localStorage.setItem('eventTimer', JSON.stringify([{ 'days': days, 'hours': hours, 'minutes': minutes, 'seconds': seconds }]))
-            // $('.seconds').text(`${eventTime[0].seconds} s`)
-            // $('.minutes').text(`${eventTime[0].minutes} m`)
-            // $('.hours').text(`${eventTime[0].hours} h`)
-            // $('.days').text(`${eventTime[0].days} d`)	
-// 	}
-
-// 	setInterval(function() { eventTimer(); }, 1000);
-
 $(document).ready(function() {
     // Set the date we're counting down to
     var eventDate = new Date("March 10, 2024 00:00:00").getTime();
